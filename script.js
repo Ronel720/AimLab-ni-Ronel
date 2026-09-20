@@ -30,7 +30,7 @@ function startGame() {
         if (timeLeft <= 0) {
             endGame();
         }
-    }, 1000);
+    }, 500);
     
     spawnTarget();
 }
@@ -67,7 +67,7 @@ function spawnTarget() {
     targetTimeout = setTimeout(() => {
         target.remove();
         spawnTarget();
-    }, 1000); 
+    }, 500); 
 }
 
 // Function to end the game
